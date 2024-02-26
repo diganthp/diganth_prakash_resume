@@ -1,0 +1,245 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=NavyBlue,citecolor=Fuchsia]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[sfdefault]{FiraSans}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+
+\begin{center}
+    {\LARGE \scshape Diganth Prakash} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +1(682)340-7973 ~ \href{mailto:diganth.prakashr@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  {diganth.prakashr@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/diganthp/}{\raisebox{-0.2\height}\faEnvelope\   {linkedin.com/in/diganthp}}  ~
+    \href{https://github.com/diganthp}{\raisebox{-0.2\height}\faGithub\ {github.com/diganthp}}
+    \vspace{-2pt}
+\end{center}
+
+
+\small{Motivated Cloud developer with 4+ years of experience, actively seeking opportunities to contribute to innovative projects. I excel at agile team collaboration, implementing CI/CD pipelines, cloud infrastructure management tools, and containerization strategies. Adopted best practices for using cloud-based services and committed to learning, mentoring, and team building.}
+
+  \vspace{-8pt}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas - Arlington}{Aug 2021 to Aug 2023}
+      {Master of Science in Computer Science}{GPA: 3.5/4.0 (Arlington, Texas)}
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.04in, label={}]
+    \small{\item{
+    \textbf{Cloud Infrastructure}{: Amazon Web Services(\textbf{AWS}), Google Cloud Platform(\textbf{GCP}), Azure Cloud} \\
+    \textbf{Languages}{: Python, Go, Javascript, Ruby, Perl} \\
+    \textbf{Databases}{: MySQL, Oracle DB, PostgreSQL, MongoDB, and Redis} \\
+     \textbf{Virtualization}{:  VMware, HyperV, OpenStack, AWS ECS, Docker, kubernetes} \\
+    \textbf{Monitoring tools}{: AWS Cloudwatch, Grafana, Prometheus, Nagios, Atlassian Statuspage, DataDog} \\
+    \textbf{Automation \& Configuration tools}{: Chef, Puppet, Ansible, Jenkins, Terraform, Shell Scripting, YAML} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+      \resumeSubheading
+      {{Nokia}}{Sep 2022 to Aug 2023}
+      {\textbf{Automation Engineer Intern}}{Dallas, USA}
+      \resumeItemListStart
+        \resumeItem{Engineered automation framework utilizing \textbf{CI/CD}, configuration management, \& orchestration to optimize \& accelerate Nokia TAS product deployments by 60\%.} 
+        \resumeItem{Developed automated health monitoring script for AT\&T to proactively monitor the systems' health \& restarts automatically to prevent crashes, decreasing manual efforts by up to 80\%. }
+        \resumeItem{Automated infrastructure provisioning \& deployment process using \textbf{OpenStack}, reducing deployment time by 50\%}
+        \resumeItem{Utilized Atlassian tools such as \textbf{Jira} for ticketing and tracking the status of objectives and \textbf{Confluence} to record and document processes and procedures.}
+        \resumeItem{Utilized \textbf{Ansible} automation for seamless server upgrades across diverse regions, managing 300+ cloud instances in multiple availability zones.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {{Bidgely Technologies}}{Aug 2018 to Jul 2021}
+      {\textbf{Software Engineer}}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Revamped scripts for an existing software process, resulting in a 60\% reduction in manual intervention.}
+        \resumeItem{Developed \textbf{AWS lambda} system monitor to send out alerts, improving the issue resolution time by 40\%.}
+        \resumeItem{Streamlined data retrieval process, resulting in a 70\% increase in data ingestion and aggregation throughput.}
+        \resumeItem{Participated in \textbf{on-call rotations}, serving as a primary point of contact for promptly addressing critical incidents within complex production systems}
+        \resumeItem{Authored \textbf{Confluence} documentation, fostering collaboration of teams with insights for streamlined onboarding and efficient project execution.}
+        \resumeItem{Orchestrated the integration of SLIs, SLOs, incident management, and postmortem analyses to elevate system reliability and operational efficiency.}
+        \resumeItem{Implemented a client notification feature utilizing \textbf{Atlassian Statuspage}, resulting in uptime and downtime tracking capabilities, thereby enhancing customer communication.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {{Nuline Technologies}}{Jan 2018 to Jun 2018}
+      {\textbf{IoT Intern}}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Developed 18 test cases in C for controlling the servo motor connected to an Arduino.}
+        \resumeItem{Delivered 11 automation test scripts with Python, decreasing manual effort by 65\% .}
+        \resumeItem{Created a web app to integrate sensor data with real-time visualization using \textbf{Tableau}.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+  \vspace{-12pt}
+
+%-----------CERTIFICATIONS-----------
+\section{CERTIFICATIONS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+        \resumeItemListStart
+            \resumeItem{AWS Certified Developer Associate}
+            \resumeItem{Github Foundations}
+          \resumeItemListEnd
+
+              \vspace{-13pt}
+ 
+    \resumeSubHeadingListEnd
+\vspace{-3pt}
+
+%-----------PROJECTS-----------
+\section{Academic Projects}
+    \vspace{-6pt}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{{Scalability Analysis}} $|$ \emph{AWS ELB, EC2, RDS, Docker, Apache Jmeter, Github, PostgreSQL, Flask}}{}
+          \resumeItemListStart
+            \resumeItem{Developed an application to perform CRUD activities that facilitates auto-scaling of instances and load tested the application using \textbf{Apache Jmeter}.}
+            
+          \resumeItemListEnd
+              \vspace{-13pt}
+              
+               \resumeProjectHeading
+          {\textbf{{Earthquake Data Analysis and Visualization}} $|$ \emph{AWS, Microsoft Azure, MySQL, Redis, Bitbucket, Gitlab}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and developed an Earthquake Analysis application with the integration of \textbf{Redis} to improve performance by 25\% and seamlessly deploy it across both AWS and Azure platforms using CI/CD techniques.}
+          \resumeItemListEnd
+              \vspace{-13pt}
+ 
+    \resumeSubHeadingListEnd
+\vspace{-1pt}
+
+
+
+%
+
+
+
+
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}
