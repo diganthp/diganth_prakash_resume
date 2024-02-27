@@ -53,8 +53,8 @@ jobs:
 
     - name: Upload file to repository
       run: |
-        git config --global user.name "your_username"
-        git config --global user.email "your_email"
+        git config --global user.name "diganthp"
+        git config --global user.email "jayanth.jayanth.prakash@gmail.com"
         git add report.pdf
         git commit -m "commit message"
         git push
